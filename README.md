@@ -15,4 +15,21 @@ mkdir Airflow
   mkdir Airflow
 
 cd Airflow
-mkdir dags logs plugins```
+mkdir dags logs plugins
+
+```
+
+### 2. Download the airflow compose file
+- **Docker Compose File** - [https://airflow.apache.org/docs/apache-airflow/3.0.1/docker-compose.yaml]
+- Save it inside the same folder inside the Airflow folder.
+
+### 3. Run Aiflow
+- open terminal inside Vs-code and browse to the Airflow folder.
+```powershell
+docker-compose up airflow-init
+docker-compose up
+```
+
+### 4. Airflow on browser
+- Once the containers are up and running, Open Airflow on browser default location: localhost:8080
+- The default userid - airflow, and password - airflow
